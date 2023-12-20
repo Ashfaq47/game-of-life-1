@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools { 
         jdk 'JDK_8'
-        maven 'MAVEN_3.9.6'
+        maven 'Maven_3.9.6'
     }
     options { 
         timeout(time: 15, unit: 'MINUTES') 
