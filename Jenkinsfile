@@ -20,6 +20,8 @@ pipeline {
         stage("build") {
             steps {
                 sh 'mvn clean package'
+                archiveArtifacts artifacts: '**/gameoflife-*.jar'
+                junit testResults: '**/TEST-*.xml'
             }
         }
     }
